@@ -1,11 +1,7 @@
-import "./App.css";
+import RouterView from "./routes";
+import "./global.css";
 
 function App() {
-  return (
-    <>
-      <h1>Amor e Patas</h1>
-    </>
-  );
+  return <RouterView />;
 }
-
 export default App;
