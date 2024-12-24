@@ -1,0 +1,70 @@
+.navbar-container {
+  flex-grow: 1;
+
+  .navbar-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-logo-container {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+
+    .logo {
+      width: 30px;
+      height: 30px;
+      margin-right: 8px;
+    }
+
+    .title {
+      font-weight: bold;
+      color: white;
+    }
+  }
+
+  .navbar-menu {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+
+    .desktop-menu {
+      cursor: pointer;
+      color: white;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .navbar-icons {
+    display: flex;
+    gap: 10px;
+
+    .MuiIconButton-root {
+      color: white;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+
+  .mobile-menu-icon {
+    display: none;
+  }
+
+  // Responsive Design
+  @media (max-width: 768px) {
+    .navbar-menu {
+      display: none;
+    }
+
+    .mobile-menu-icon {
+      display: block;
+    }
+  }
+}
