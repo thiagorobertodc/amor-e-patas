@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -29,16 +29,16 @@ export default function Navbar() {
       onKeyDown={handleDrawerToggle}
     >
       <List>
-        <ListItem button component={Link} to="/">
+        <ListItem component={Link} to="/">
           <ListItemText primary="Página Inicial" />
         </ListItem>
-        <ListItem button component={Link} to="/services">
+        <ListItem component={Link} to="/services">
           <ListItemText primary="Serviços" />
         </ListItem>
-        <ListItem button component={Link} to="/blog">
+        <ListItem component={Link} to="/blog">
           <ListItemText primary="Blog" />
         </ListItem>
-        <ListItem button component={Link} to="/contact">
+        <ListItem component={Link} to="/contact">
           <ListItemText primary="Contato" />
         </ListItem>
       </List>
