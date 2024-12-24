@@ -1,0 +1,69 @@
+.services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; // Center content
+  justify-content: center;
+  height: auto;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Header Section */
+.services-header {
+  text-align: center;
+  margin-bottom: 20px;
+
+  .logo-header {
+    width: 120px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 16px;
+    color: #555;
+  }
+}
+
+/* Cards Section */
+.services-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+  // Mobile responsiveness
+  @media (max-width: 768px) {
+    flex-direction: column; // Stack vertically
+    align-items: center;
+  }
+
+  // Hover Effect for Cards
+  .MuiCard-root {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; // Smooth scaling and shadow transition
+
+    &:hover {
+      transform: scale(1.05); // Slight scaling
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); // Elevated shadow
+    }
+  }
+}
+
+/* CTA Section */
+.cta-container {
+  margin-top: 20px;
+
+  button {
+    background-color: #24483a; // Brand primary color
+    color: white;
+
+    &:hover {
+      background-color: #1e3a2d; // Darker shade for hover
+    }
+  }
+}

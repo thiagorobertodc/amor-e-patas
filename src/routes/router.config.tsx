@@ -4,6 +4,7 @@ import BasicLayout from "../components/BasicLayout";
 import * as path from "./path";
 
 const Home = lazy(() => import("../pages/Home/Home"));
+const Services = lazy(() => import("../pages/Services/Services"));
 
 const routes: RouteObject[] = [
   {
@@ -22,6 +23,7 @@ const routes: RouteObject[] = [
     children: [
       {
         path: path.SERVICES,
+        element: <Services />,
       },
     ],
   },
