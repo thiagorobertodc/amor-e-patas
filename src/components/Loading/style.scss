@@ -1,0 +1,22 @@
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4b93b; // Background color similar to landing page
+}
+
+.loading-image {
+  width: 150px; // Adjust size as needed
+  height: 150px;
+  animation: spin 2s infinite linear; // Optional animation for spinning effect
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

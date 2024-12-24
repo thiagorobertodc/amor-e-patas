@@ -1,0 +1,92 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; // Prevent scrolling
+}
+
+.body-container {
+  background-color: #f4b93b; // Keep the golden background
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  align-items: center; // Align items vertically
+  justify-content: space-between;
+  max-height: 90%; // Avoid overflowing viewport
+  box-sizing: border-box;
+  gap: 20px; // Add space between sections
+}
+
+.left-section {
+  flex: 1;
+  display: flex;
+  align-items: flex-end; // Align image to the bottom
+}
+
+.vet-image {
+  width: 100%;
+  height: auto;
+  max-height: 90vh; // Prevent image overflow
+  object-fit: contain; // Ensure proportions
+}
+
+.right-section {
+  flex: 2;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-y: auto; // Enable scrolling if content overflows
+  max-height: 90vh;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  // Tablets and small devices
+  .body-container {
+    padding: 10px;
+    align-items: flex-start; // Adjust alignment for vertical stacking
+  }
+
+  .content {
+    flex-direction: column; // Stack image and text vertically
+    align-items: center; // Center content horizontally
+  }
+
+  .left-section {
+    width: 100%;
+    justify-content: center; // Center the image
+  }
+
+  .vet-image {
+    max-width: 80%; // Adjust image size for smaller screens
+    max-height: 50vh; // Avoid taking up too much space
+  }
+
+  .right-section {
+    padding-left: 0; // Remove padding for smaller screens
+    padding-top: 20px; // Add spacing above the text
+    font-size: 14px; // Reduce text size for readability
+  }
+}
+
+@media (max-width: 480px) {
+  // Smartphones
+  .vet-image {
+    max-width: 100%; // Use full width
+    max-height: 40vh; // Reduce height for very small screens
+  }
+
+  .right-section {
+    font-size: 14px; // Smaller text for readability
+    line-height: 1.4; // Tighter line spacing
+    text-align: center; // Center the text
+  }
+}

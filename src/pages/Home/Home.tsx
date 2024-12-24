@@ -1,11 +1,50 @@
+import React, { useState } from "react";
+import Loading from "../../components/Loading/Loading"; // Import the loader
 import "./Home.scss";
 
-function Home() {
-  return (
-    <>
-      <h1>Amor e Patas</h1>
-    </>
+const Home: React.FC = () => {
+  const [isLoading, setIsLoading] = useState(true); // State to track loading
+
+  const handleLoaded = () => {
+    setIsLoading(false); // Hide loader when loading is complete
+  };
+
+  return isLoading ? (
+    <Loading onLoaded={handleLoaded} />
+  ) : (
+    <div className="body-container">
+      <div className="content">
+        <div className="left-section">
+          <img
+            src="/src/assets/images/vet.png"
+            alt="Veterinária"
+            className="vet-image"
+          />
+        </div>
+        <div className="right-section">
+          <p>
+            Oi! Sou a Raís, médica veterinária pela UNA. Atendo a domicílio,
+            trazendo cuidado e amor para os nossos bichinhos. Durante a
+            graduação, tive experiências incríveis em estágios que me ajudaram a
+            me tornar a profissional que sou hoje.
+          </p>
+          <p>
+            Acredito que cada animal tem sua própria história e merece atenção
+            personalizada. Meu compromisso é proporcionar um atendimento
+            humanizado, com carinho e responsabilidade, garantindo bem-estar e
+            qualidade de vida para os pets e tranquilidade para seus tutores.
+          </p>
+          <p>
+            Desde consultas preventivas até cuidados específicos, estou aqui
+            para ajudar. Seja um filhote cheio de energia ou um companheiro mais
+            idoso que precisa de cuidados especiais, minha missão é sempre
+            oferecer o melhor tratamento. Conte comigo para cuidar do seu
+            bichinho como ele merece!
+          </p>
+        </div>
+      </div>
+    </div>
   );
-}
+};
 
 export default Home;
