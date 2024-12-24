@@ -15,10 +15,10 @@ const Home: React.FC = () => {
         </div>
         <div className="right-section">
           <p>
-            Oi! Sou a Raís, médica veterinária pela UNA. Atendo a domicílio,
-            trazendo cuidado e amor para os nossos bichinhos. Durante a
-            graduação, tive experiências incríveis em estágios que me ajudaram a
-            me tornar a profissional que sou hoje.
+            Olá! Sou Raís Faria Fonseca Emiliano, médica veterinária pela UNA
+            (CRMV/MG 32259). Atendo a domicílio, trazendo cuidado e amor para os
+            nossos bichinhos. Durante a graduação, tive experiências incríveis
+            em estágios que me ajudaram a me tornar a profissional que sou hoje.
           </p>
           <p>
             Acredito que cada animal tem sua própria história e merece atenção
