@@ -4,6 +4,7 @@ import Button from "@mui/material/Button";
 import ServiceCard from "../../components/Card/Card";
 import aepGreenImg from "../../assets/images/aep_green.svg";
 import "./style.scss";
+import { useEffect } from "react";
 
 const Services = () => {
   const services = [
@@ -22,6 +23,14 @@ const Services = () => {
       icon: <HomeIcon />,
     },
   ];
+
+  useEffect(() => {
+    document.body.classList.add("service-scroll");
+
+    return () => {
+      document.body.classList.remove("service-scroll");
+    };
+  });
 
   return (
     <div className="services-container">
