@@ -93,6 +93,12 @@
   }
 }
 
+@media (min-width: 1080px) {
+  body {
+    overflow: hidden !important;
+  }
+}
+
 @media (max-width: 480px) {
   .vet-image {
     max-width: 100%;

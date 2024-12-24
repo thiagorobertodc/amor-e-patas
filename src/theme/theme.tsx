@@ -26,7 +26,6 @@ let theme = createTheme({
           height: "100%",
           backgroundColor: "#24483a", // Dark green body background
           color: "#ffffff", // White text by default
-          overflow: "hidden",
         },
         html: {
           height: "100%",
