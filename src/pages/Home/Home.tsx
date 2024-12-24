@@ -19,9 +19,9 @@ const Home: React.FC = () => {
           </p>
           <p>
             Acredito que cada animal tem sua própria história e merece atenção
-            personalizada. Meu compromisso é proporcionar um atendimento
-            humanizado, com carinho e responsabilidade, garantindo bem-estar e
-            qualidade de vida para os pets e tranquilidade para seus tutores.
+            personalizada. Meu compromisso é proporcionar um atendimento com
+            carinho e responsabilidade, garantindo bem-estar e qualidade de vida
+            para os pets e tranquilidade para seus tutores.
           </p>
           <p>
             Desde consultas preventivas até cuidados específicos, estou aqui

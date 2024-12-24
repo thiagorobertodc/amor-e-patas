@@ -12,7 +12,7 @@ const Services = () => {
       title: "Exames Laboratoriais",
       subtitle: "Resultados rápidos e precisos",
       description:
-        "Realizamos exames como ultrassonografia, coleta de sangue e outros testes laboratoriais para garantir diagnósticos rápidos e eficazes.",
+        "Realização de diversos exames laboratoriais e outros testes para garantir diagnósticos rápidos e eficazes.",
       icon: <ScienceIcon />,
     },
     {
