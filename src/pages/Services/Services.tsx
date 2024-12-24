@@ -1,8 +1,9 @@
-import "./style.scss";
 import HomeIcon from "@mui/icons-material/Home";
 import ScienceIcon from "@mui/icons-material/Science";
 import Button from "@mui/material/Button";
 import ServiceCard from "../../components/Card/Card";
+import aepGreenImg from "../../assets/images/aep_green.svg";
+import "./style.scss";
 
 const Services = () => {
   const services = [
@@ -25,11 +26,7 @@ const Services = () => {
   return (
     <div className="services-container">
       <div className="services-header">
-        <img
-          src="/src/assets/images/aep_green.svg"
-          alt="Amor e Patas"
-          className="logo-header"
-        />
+        <img src={aepGreenImg} alt="Amor e Patas" className="logo-header" />
         <h2>Nossos Serviços</h2>
         <p>
           Oferecemos o melhor cuidado para o seu pet com serviços

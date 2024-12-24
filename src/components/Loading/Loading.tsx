@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
-import "./style.scss"; // Add styles for the loader
+import loadingImg from "../../assets/images/loading.png";
+import "./style.scss";
 
 interface LoadingProps {
-  onLoaded: () => void; // Callback when loading finishes
+  onLoaded: () => void;
 }
 
 const Loading: React.FC<LoadingProps> = ({ onLoaded }) => {
@@ -11,17 +12,12 @@ const Loading: React.FC<LoadingProps> = ({ onLoaded }) => {
       onLoaded();
     }, 800);
 
-    return () => clearTimeout(timer); // Cleanup
+    return () => clearTimeout(timer);
   }, [onLoaded]);
 
   return (
     <div className="loading-container">
-      {/* Replace with your SVG or PNG image */}
-      <img
-        src="/src/assets/images/loading.png"
-        alt="Loading"
-        className="loading-image"
-      />
+      <img src={loadingImg} alt="Loading" className="loading-image" />
     </div>
   );
 };

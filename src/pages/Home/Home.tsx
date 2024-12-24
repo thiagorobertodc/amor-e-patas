@@ -1,17 +1,14 @@
 import React from "react";
-import "./Home.scss";
 import WhatsappButton from "../../components/Socials/Whatsapp/WhatsappButton";
+import vetImage from "../../assets/images/vet1.png";
+import "./Home.scss";
 
 const Home: React.FC = () => {
   return (
     <div className="body-container">
       <div className="content">
         <div className="left-section">
-          <img
-            src="/src/assets/images/vet1.png"
-            alt="Veterinária"
-            className="vet-image"
-          />
+          <img src={vetImage} alt="Veterinária" className="vet-image" />
         </div>
         <div className="right-section">
           <p>

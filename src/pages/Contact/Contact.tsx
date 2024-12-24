@@ -1,19 +1,16 @@
 import React from "react";
-import "./style.scss";
 import Button from "@mui/material/Button";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import vetImage from "../../assets/images/vet.png";
+import "./style.scss";
 
 const Contact: React.FC = () => {
   return (
     <div className="contact-container">
       <div className="content">
         <div className="left-section">
-          <img
-            src="/src/assets/images/vet.png"
-            alt="Veterinária"
-            className="vet-image"
-          />
+          <img src={vetImage} alt="Veterinária" className="vet-image" />
         </div>
         <div className="right-section">
           <p>
