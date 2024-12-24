@@ -4,8 +4,6 @@ import CardContent from "@mui/material/CardContent";
 import CardHeader from "@mui/material/CardHeader";
 import Typography from "@mui/material/Typography";
 import Avatar from "@mui/material/Avatar";
-import HomeIcon from "@mui/icons-material/Home"; // Home service icon
-import ScienceIcon from "@mui/icons-material/Science"; // Lab service icon
 
 // Props for customization
 interface ServiceCardProps {

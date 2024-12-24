@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./style.scss";
-import Loading from "../../components/Loading/Loading"; // Import your loading component
+import Loading from "../../components/Loading/Loading";
+
+declare const window: any;
 
 const Blog = () => {
-  const [loading, setLoading] = useState(true); // Use state for loading
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     // Add scroll behavior for Blog page
@@ -15,20 +17,18 @@ const Blog = () => {
       script.async = true;
       script.src = "https://www.instagram.com/embed.js";
       script.onload = () => {
-        window.instgrm.Embeds.process(); // Process embeds after loading script
+        window.instgrm.Embeds.process();
       };
       document.body.appendChild(script);
     } else {
-      window.instgrm.Embeds.process(); // Process if already loaded
+      window.instgrm.Embeds.process();
     }
 
-    // Simulate loading effect (3 seconds)
     const timer = setTimeout(() => {
-      setLoading(false); // Stop loading after 3 seconds
-      window.instgrm.Embeds.process(); // Ensure embeds are processed
+      setLoading(false);
+      window.instgrm.Embeds.process();
     }, 3000);
 
-    // Cleanup scroll behavior and timer
     return () => {
       document.body.classList.remove("blog-scroll");
       clearTimeout(timer);
