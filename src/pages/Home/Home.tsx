@@ -1,18 +1,9 @@
-import React, { useState } from "react";
-import Loading from "../../components/Loading/Loading";
+import React from "react";
 import "./Home.scss";
 import WhatsappButton from "../../components/Socials/Whatsapp/WhatsappButton";
 
 const Home: React.FC = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  const handleLoaded = () => {
-    setIsLoading(false);
-  };
-
-  return isLoading ? (
-    <Loading onLoaded={handleLoaded} />
-  ) : (
+  return (
     <div className="body-container">
       <div className="content">
         <div className="left-section">

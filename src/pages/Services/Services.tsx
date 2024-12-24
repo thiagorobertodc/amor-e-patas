@@ -1,4 +1,3 @@
-import React from "react";
 import "./style.scss";
 import HomeIcon from "@mui/icons-material/Home";
 import ScienceIcon from "@mui/icons-material/Science";
@@ -25,10 +24,9 @@ const Services = () => {
 
   return (
     <div className="services-container">
-      {/* Header Section */}
       <div className="services-header">
         <img
-          src="/src/assets/images/aep_green.svg" // Example logo usage
+          src="/src/assets/images/aep_green.svg"
           alt="Amor e Patas"
           className="logo-header"
         />

@@ -1,20 +1,11 @@
 import React, { useState } from "react";
-import Loading from "../../components/Loading/Loading";
 import "./style.scss";
 import Button from "@mui/material/Button";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import InstagramIcon from "@mui/icons-material/Instagram";
 
 const Contact: React.FC = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  const handleLoaded = () => {
-    setIsLoading(false);
-  };
-
-  return isLoading ? (
-    <Loading onLoaded={handleLoaded} />
-  ) : (
+  return (
     <div className="contact-container">
       <div className="content">
         <div className="left-section">
