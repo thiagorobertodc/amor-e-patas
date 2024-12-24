@@ -38,7 +38,6 @@ const Blog = () => {
   return (
     <div className="blog-container">
       {loading && <Loading onLoaded={() => {}} />}
-      <h2 className="title">Últimos Posts no Instagram</h2>
       <div className={`instagram-posts ${loading ? "loading" : ""}`}>
         <div className="instagram-card">
           <blockquote
