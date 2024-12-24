@@ -6,6 +6,7 @@ import * as path from "./path";
 const Home = lazy(() => import("../pages/Home/Home"));
 const Services = lazy(() => import("../pages/Services/Services"));
 const Blog = lazy(() => import("../pages/Blog/Blog"));
+const Contact = lazy(() => import("../pages/Contact/Contact"));
 
 const routes: RouteObject[] = [
   {
@@ -44,7 +45,7 @@ const routes: RouteObject[] = [
     children: [
       {
         path: path.CONTACT,
-        element: <Blog />,
+        element: <Contact />,
       },
     ],
   },

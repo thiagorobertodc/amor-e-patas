@@ -1,0 +1,99 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; // Full viewport height
+  padding: 20px;
+  background-color: #24483a; // Dark green background
+  color: white;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    gap: 20px;
+
+    .left-section {
+      flex: 1;
+
+      .vet-image {
+        width: 100%;
+        max-width: 350px;
+        border-radius: 10px;
+      }
+    }
+
+    .right-section {
+      flex: 2;
+      text-align: left;
+
+      p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      .buttons-container {
+        display: flex;
+        gap: 15px;
+
+        // WhatsApp Button
+        .whatsapp-btn {
+          background-color: #25d366 !important; // WhatsApp color
+          color: white !important;
+
+          &:hover {
+            background-color: #20b858 !important;
+          }
+        }
+
+        // Instagram Button
+        .instagram-btn {
+          background-color: #e4405f !important; // Instagram color
+          color: white !important;
+
+          &:hover {
+            background-color: #d63650 !important;
+          }
+        }
+
+        button {
+          padding: 10px 20px;
+          font-size: 16px;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+
+  // Mobile responsiveness
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+
+      .left-section {
+        display: flex;
+        justify-content: center;
+
+        .vet-image {
+          max-width: 250px;
+        }
+      }
+
+      .right-section {
+        text-align: center;
+
+        .buttons-container {
+          flex-direction: row;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

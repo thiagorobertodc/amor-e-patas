@@ -1,0 +1,61 @@
+import React, { useState } from "react";
+import Loading from "../../components/Loading/Loading";
+import "./style.scss";
+import Button from "@mui/material/Button";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import InstagramIcon from "@mui/icons-material/Instagram";
+
+const Contact: React.FC = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handleLoaded = () => {
+    setIsLoading(false);
+  };
+
+  return isLoading ? (
+    <Loading onLoaded={handleLoaded} />
+  ) : (
+    <div className="contact-container">
+      <div className="content">
+        <div className="left-section">
+          <img
+            src="/src/assets/images/vet.png"
+            alt="Veterinária"
+            className="vet-image"
+          />
+        </div>
+        <div className="right-section">
+          <p>
+            Você pode me contatar ou agendar sua consulta pelo meu WhatsApp, e
+            acompanhar meus últimos posts no Instagram. Continue acompanhando me
+            seguindo por lá!
+          </p>
+          <div className="buttons-container">
+            <Button
+              variant="contained"
+              size="large"
+              href="https://wa.me/+553199381294"
+              target="_blank"
+              className="whatsapp-btn"
+              startIcon={<WhatsAppIcon />}
+            >
+              WhatsApp
+            </Button>
+            <Button
+              variant="contained"
+              size="large"
+              href="https://www.instagram.com/amorepatasvet/"
+              target="_blank"
+              className="instagram-btn"
+              startIcon={<InstagramIcon />}
+            >
+              Instagram
+            </Button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;
