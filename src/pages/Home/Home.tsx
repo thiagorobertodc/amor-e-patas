@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import Loading from "../../components/Loading/Loading"; // Import the loader
+import Loading from "../../components/Loading/Loading";
 import "./Home.scss";
 
 const Home: React.FC = () => {
-  const [isLoading, setIsLoading] = useState(true); // State to track loading
+  const [isLoading, setIsLoading] = useState(true);
 
   const handleLoaded = () => {
-    setIsLoading(false); // Hide loader when loading is complete
+    setIsLoading(false);
   };
 
   return isLoading ? (

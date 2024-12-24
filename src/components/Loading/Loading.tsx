@@ -6,11 +6,10 @@ interface LoadingProps {
 }
 
 const Loading: React.FC<LoadingProps> = ({ onLoaded }) => {
-  // Simulate loading time (e.g., 2 seconds)
   useEffect(() => {
     const timer = setTimeout(() => {
-      onLoaded(); // Trigger parent callback when loading ends
-    }, 2000);
+      onLoaded();
+    }, 800);
 
     return () => clearTimeout(timer); // Cleanup
   }, [onLoaded]);
