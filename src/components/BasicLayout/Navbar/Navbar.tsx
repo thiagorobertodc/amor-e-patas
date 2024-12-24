@@ -50,12 +50,13 @@ export default function Navbar() {
     <Box className="navbar-container">
       <AppBar position="static" className="navbar-appbar">
         <Toolbar className="navbar-toolbar">
-          {/* Logo and Title */}
           <div className="navbar-logo-container">
-            <img src={aepImage} alt="Logo" className="logo" />
-            <Typography variant="h6" className="title">
-              Amor e Patas
-            </Typography>
+            <Link to="/" className="navbar-logo-container">
+              <img src={aepImage} alt="Logo" className="logo" />
+              <Typography variant="h6" className="title">
+                Amor e Patas
+              </Typography>
+            </Link>
           </div>
 
           {/* Menu Items for Larger Screens */}
