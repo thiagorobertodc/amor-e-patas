@@ -5,6 +5,7 @@ import * as path from "./path";
 
 const Home = lazy(() => import("../pages/Home/Home"));
 const Services = lazy(() => import("../pages/Services/Services"));
+const Blog = lazy(() => import("../pages/Blog/Blog"));
 
 const routes: RouteObject[] = [
   {
@@ -24,6 +25,16 @@ const routes: RouteObject[] = [
       {
         path: path.SERVICES,
         element: <Services />,
+      },
+    ],
+  },
+  {
+    path: path.BLOG,
+    element: <BasicLayout />,
+    children: [
+      {
+        path: path.BLOG,
+        element: <Blog />,
       },
     ],
   },

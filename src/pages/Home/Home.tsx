@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Loading from "../../components/Loading/Loading";
 import "./Home.scss";
-import WhatsappButton from "../../components/Socials/WhatsappButton";
+import WhatsappButton from "../../components/Socials/Whatsapp/WhatsappButton";
 
 const Home: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
