@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Loading from "../../components/Loading/Loading";
 import "./Home.scss";
+import WhatsappButton from "../../components/Socials/WhatsappButton";
 
 const Home: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -41,6 +42,9 @@ const Home: React.FC = () => {
             oferecer o melhor tratamento. Conte comigo para cuidar do seu
             bichinho como ele merece!
           </p>
+          <div className="whatsapp-container">
+            <WhatsappButton />
+          </div>
         </div>
       </div>
     </div>

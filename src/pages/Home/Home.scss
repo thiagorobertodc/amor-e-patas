@@ -38,6 +38,26 @@
   max-height: 90vh;
 }
 
+.whatsapp-container {
+  display: flex;
+  justify-content: start;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .whatsapp-container {
+    margin-top: 10px;
+  }
+}
+
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
   .body-container {
