@@ -38,6 +38,16 @@ const routes: RouteObject[] = [
       },
     ],
   },
+  {
+    path: path.CONTACT,
+    element: <BasicLayout />,
+    children: [
+      {
+        path: path.CONTACT,
+        element: <Blog />,
+      },
+    ],
+  },
 ];
 
 export default routes;
