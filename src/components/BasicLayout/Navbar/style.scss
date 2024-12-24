@@ -53,6 +53,19 @@
     }
   }
 
+  .menu-link {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .navbar-menu .menu-link {
+    color: white;
+  }
+
   .mobile-menu-icon {
     display: none;
   }

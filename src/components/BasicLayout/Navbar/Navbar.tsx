@@ -12,6 +12,7 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import "./style.scss";
+import { Link } from "react-router-dom"; // Import Link
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -28,11 +29,18 @@ export default function Navbar() {
       onKeyDown={handleDrawerToggle}
     >
       <List>
-        {["Página Inicial", "Serviços", "Blog", "Contato"].map((text) => (
-          <ListItem button key={text}>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
+        <ListItem button component={Link} to="/">
+          <ListItemText primary="Página Inicial" />
+        </ListItem>
+        <ListItem button component={Link} to="/services">
+          <ListItemText primary="Serviços" />
+        </ListItem>
+        <ListItem button component={Link} to="/blog">
+          <ListItemText primary="Blog" />
+        </ListItem>
+        <ListItem button component={Link} to="/contact">
+          <ListItemText primary="Contato" />
+        </ListItem>
       </List>
     </Box>
   );
@@ -52,16 +60,24 @@ export default function Navbar() {
           {/* Menu Items for Larger Screens */}
           <div className="navbar-menu">
             <Typography variant="body1" className="desktop-menu">
-              Página Inicial
+              <Link to="/" className="menu-link">
+                Página Inicial
+              </Link>
             </Typography>
             <Typography variant="body1" className="desktop-menu">
-              Serviços
+              <Link to="/services" className="menu-link">
+                Serviços
+              </Link>
             </Typography>
             <Typography variant="body1" className="desktop-menu">
-              Blog
+              <Link to="/blog" className="menu-link">
+                Blog
+              </Link>
             </Typography>
             <Typography variant="body1" className="desktop-menu">
-              Contato
+              <Link to="/contact" className="menu-link">
+                Contato
+              </Link>
             </Typography>
           </div>
 
