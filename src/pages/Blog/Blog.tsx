@@ -42,6 +42,13 @@ const Blog = () => {
         <div className="instagram-card">
           <blockquote
             className="instagram-media"
+            data-instgrm-permalink="https://www.instagram.com/p/DD97HqqRZv_/"
+            data-instgrm-version="14"
+          ></blockquote>
+        </div>
+        <div className="instagram-card">
+          <blockquote
+            className="instagram-media"
             data-instgrm-permalink="https://www.instagram.com/p/DDvGjlVSD0b/"
             data-instgrm-version="14"
           ></blockquote>
