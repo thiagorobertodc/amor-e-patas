@@ -17,7 +17,7 @@ const Home: React.FC = () => {
       <div className="content">
         <div className="left-section">
           <img
-            src="/src/assets/images/vet.png"
+            src="/src/assets/images/vet1.png"
             alt="Veterinária"
             className="vet-image"
           />

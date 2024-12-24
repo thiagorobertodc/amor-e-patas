@@ -4,8 +4,9 @@ body.blog-scroll {
 
 .blog-container {
   padding: 20px;
-  background-color: #f4b93b;
   text-align: center;
+  background-color: #24483a; // Dark green background
+  color: white; // White text for the entire container
 
   .title {
     font-size: 24px;
@@ -23,7 +24,7 @@ body.blog-scroll {
     .instagram-card {
       padding: 10px;
       border-radius: 10px;
-      background-color: #24483a;
+      background-color: #edebdf;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
 

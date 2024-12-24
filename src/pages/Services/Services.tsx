@@ -39,7 +39,6 @@ const Services = () => {
         </p>
       </div>
 
-      {/* Cards Section */}
       <div className="services-cards">
         {services.map((service, index) => (
           <ServiceCard
@@ -52,15 +51,13 @@ const Services = () => {
         ))}
       </div>
 
-      {/* Call-to-Action Section */}
       <div className="cta-container">
         <Button
           variant="contained"
-          color="primary"
           size="large"
           href="https://wa.me/+553199381294"
           target="_blank"
-          sx={{ marginTop: 1 }}
+          sx={{ marginTop: 1, background: "#9af191" }}
         >
           Agende uma Consulta
         </Button>

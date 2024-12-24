@@ -1,11 +1,13 @@
 .services-container {
   display: flex;
   flex-direction: column;
-  align-items: center; // Center content
+  align-items: center;
   justify-content: center;
   height: auto;
   padding: 20px;
   gap: 20px;
+  background-color: #24483a; // Dark green background
+  color: white; // White text for the entire container
 }
 
 /* Header Section */
@@ -16,6 +18,7 @@
   .logo-header {
     width: 120px;
     margin-bottom: 10px;
+    filter: brightness(0) invert(1); // Make logos white if needed
   }
 
   h2 {
@@ -26,7 +29,7 @@
 
   p {
     font-size: 16px;
-    color: #555;
+    color: #d4d4d4; // Light gray text for description
   }
 }
 
@@ -39,17 +42,31 @@
 
   // Mobile responsiveness
   @media (max-width: 768px) {
-    flex-direction: column; // Stack vertically
+    flex-direction: column;
     align-items: center;
   }
 
   // Hover Effect for Cards
   .MuiCard-root {
-    transition: transform 0.3s ease, box-shadow 0.3s ease; // Smooth scaling and shadow transition
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #1e3a2d; // Slightly darker green for the cards
+    color: white;
 
     &:hover {
-      transform: scale(1.05); // Slight scaling
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); // Elevated shadow
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); // Darker shadow
+    }
+
+    .MuiCardContent-root {
+      color: white; // Ensure text in the card is white
+    }
+
+    .MuiTypography-root {
+      color: white; // Ensure headings inside cards are white
+    }
+
+    .MuiSvgIcon-root {
+      color: #f4b93b; // Golden accent for icons
     }
   }
 }
@@ -59,11 +76,11 @@
   margin-top: 20px;
 
   button {
-    background-color: #24483a; // Brand primary color
-    color: white;
+    background-color: #f4b93b; // Golden CTA button
+    color: #24483a; // Dark green text
 
     &:hover {
-      background-color: #1e3a2d; // Darker shade for hover
+      background-color: #dca32d; // Darker golden hover effect
     }
   }
 }

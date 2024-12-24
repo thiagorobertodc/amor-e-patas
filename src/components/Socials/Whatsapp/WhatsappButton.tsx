@@ -16,6 +16,7 @@ export default function WhatsappButton() {
       tabIndex={-1}
       startIcon={<WhatsAppIcon />}
       onClick={handleClick}
+      sx={{ background: "#9af191" }}
     >
       Whatsapp
     </Button>
