@@ -57,7 +57,7 @@ const Services = () => {
           size="large"
           href="https://wa.me/+553199381294"
           target="_blank"
-          sx={{ marginTop: 1, background: "#9af191" }}
+          sx={{ marginTop: 1 }}
         >
           Agende uma Consulta
         </Button>

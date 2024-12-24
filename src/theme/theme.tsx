@@ -32,7 +32,7 @@ let theme = createTheme({
           height: "100%",
         },
         a: {
-          color: "#f4b93b", // Gold color for links
+          color: "#24483a;", // Gold color for links
         },
       },
     },
