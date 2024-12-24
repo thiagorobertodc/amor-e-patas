@@ -70,6 +70,12 @@
     }
   }
 
+  @media (max-width: 420px) {
+    body {
+      overflow: auto !important;
+    }
+  }
+
   // Mobile responsiveness
   @media (max-width: 768px) {
     .content {
