@@ -19,7 +19,7 @@ This is a personal project created to gift a friend who is a veterinarian. The g
 ### 1. Clone the repository:
 
 ```
-git clone <repository-url>
+git clone https://github.com/thiagorobertodc/amor-e-patas
 ```
 
 ### 2. Navigate to the project folder:
